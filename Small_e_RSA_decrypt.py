@@ -3,7 +3,8 @@ e = int(input('public key: '))
 n = int(input('value of n: '))
 c = int(input('ciphertext: '))
 
-m = iroot(c, e)
+m_tuple = iroot(c, e)
+m = m_tuple[0]
 
 m_hex = hex(m)[2:]
 if len(m_hex) % 2:
